@@ -1,0 +1,1308 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CYBERRESUME2077</title>
+    <link href="layout/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="layout/css/bootstrap.min.css">
+    <link rel="stylesheet" href="layout/bootstrap-icons/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+
+    </style>
+</head>
+
+<body class="cyber-bg">
+
+    <nav class="navbar navbar-expand-lg bg-dark  p-4" data-bs-theme="dark">
+        <div class="container-fluid">
+            <div class="row d-flex">
+                <div class="col-6">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td rowspan="2">
+                                    <a class="text-light text-decoration-none fs-2 m-0 shadow-lg" href="#">46</a>
+                                </td>
+                                <td>
+                                    <a class="text-light text-decoration-none fs-4 ">УРОВЕНЬ</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped bg-light progress-bar-animated"
+                                            role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
+                                            style="width: 35%;"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-6">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td rowspan="2">
+                                    <a class="text-success text-decoration-none fs-2 m-0 shadow-lg" href="#">21</a>
+                                </td>
+                                <td>
+                                    <a class="text-success text-decoration-none fs-4">РЕПУТАЦИЯ</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped bg-success progress-bar-animated"
+                                            role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
+                                            style="width: 75%;"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid d-flex justify-content-center">
+            <audio id="myAudio" loop preload="auto" src="/layout/audio/cybersound.mp3"></audio>
+            <button id="playmusic" class="bg-transparent border" onclick="toggleAudio()"><i
+                    class="text-danger bi bi-pause fs-1"></i></button>
+            <a class="text-danger fs-3 text-decoration-none">Hyper – Spoiler</a>
+        </div>
+
+
+        <div class="container-fluid">
+            <button class="navbar-toggler col-12" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarcolor02" aria-controls="navbarcolor02" aria-expanded="false"
+                aria-label="toggle navigation">
+                <i class="text-danger fs-1 bi bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarcolor02">
+                <ul class="navbar-nav me-auto fs-5">
+                    <li class="nav-item text-center ">
+                        <a class="nav-link text-danger" href="#"><i class="bi bi-person-bounding-box"></i> ПЕРСОНАЖ </a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link text-danger" href="#"><i class="bi bi-diagram-3"></i> НАВЫКИ</a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link text-danger" href="#"><i class="bi bi-box2"></i> ИНВЕНТАРЬ</a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link text-danger" href="#"><i class="bi bi-award"></i> ДОСТИЖЕНИЯ</a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link text-danger" href="#"><i class="bi bi-send"></i> КОНТАКТ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <!-- Список умений -->
+    <div class="container-fluid" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <div class="row">
+
+            <div class="col">
+                <div class="card border-light mt-3">
+                    <div class="card-header text-center"><a class="text-decoration-none text-danger fs-3">WEB -
+                            РАЗРАБОТКА</a>
+                    </div>
+                    <div class="card-body text-center" role="presentation">
+                        <div class="row">
+                            <div class="col-12">
+                                <a type="button" class="fs-1 text-dark text-decoration-none" id="v-pills-1-tab"
+                                    data-bs-toggle="pill" data-bs-target="#v-pills-1" role="tab"
+                                    aria-controls="v-pills-1" aria-selected="false">
+                                    <div class="card border-danger px-3  bg-danger mb-3">
+                                        <div class="card-body text-center d-flex flex-column">
+                                            <i class="bi bi-globe2 text-dark"></i>
+                                            <span class="badge text-dark fs-6">2 / 5</span>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <a type="button" class="fs-1 text-dark text-decoration-none" id="v-pills-2-tab"
+                                    data-bs-toggle="pill" data-bs-target="#v-pills-2" type="button" role="tab"
+                                    aria-controls="v-pills-2" aria-selected="false">
+                                    <div class="card border-danger px-3  bg-danger mb-3">
+                                        <div class="card-body text-center d-flex flex-column">
+                                            <i class="bi bi-filetype-html text-dark"></i>
+                                            <span class="badge  text-dark fs-6">4 / 5</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a type="button" class="fs-1 text-dark text-decoration-none" id="v-pills-3-tab"
+                                    data-bs-toggle="pill" data-bs-target="#v-pills-3" type="button" role="tab"
+                                    aria-controls="v-pills-3" aria-selected="false">
+                                    <div class="card border-danger px-3  bg-danger mb-3">
+                                        <div class="card-body text-center d-flex flex-column">
+                                            <i class="bi bi-filetype-css text-dark"></i>
+                                            <span class="badge  text-dark fs-6">3 / 5</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a type="button" class="fs-1 text-dark text-decoration-none" id="v-pills-4-tab"
+                                    data-bs-toggle="pill" data-bs-target="#v-pills-4" type="button" role="tab"
+                                    aria-controls="v-pills-4" aria-selected="false">
+                                    <div class="card border-danger px-3  bg-danger mb-3">
+                                        <div class="card-body text-center d-flex flex-column">
+                                            <i class="bi bi-filetype-js text-dark"></i>
+                                            <span class="badge  text-dark fs-6">2 / 5</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-6 text-end">
+                                <a type="button" class="fs-1 text-dark text-decoration-none" id="v-pills-5-tab"
+                                    data-bs-toggle="pill" data-bs-target="#v-pills-5" type="button" role="tab"
+                                    aria-controls="v-pills-5" aria-selected="false">
+                                    <div class="card border-danger px-3  bg-danger mb-3">
+                                        <div class="card-body text-center d-flex flex-column">
+                                            <i class="bi bi-filetype-php text-dark"></i>
+                                            <span class="badge  text-dark fs-6">4 / 5</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 text-start">
+                                <a type="button" class="fs-1 text-dark text-decoration-none" id="v-pills-6-tab"
+                                    data-bs-toggle="pill" data-bs-target="#v-pills-6" type="button" role="tab"
+                                    aria-controls="v-pills-6" aria-selected="false">
+                                    <div class="card border-danger px-3  bg-danger mb-3">
+                                        <div class="card-body text-center d-flex flex-column">
+                                            <i class="bi bi-filetype-sql text-dark"></i>
+                                            <span class="badge  text-dark fs-6">2 / 5</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <a type="button" class="fs-1 text-dark text-decoration-none" id="v-pills-7-tab"
+                                    data-bs-toggle="pill" data-bs-target="#v-pills-7" type="button" role="tab"
+                                    aria-controls="v-pills-7" aria-selected="false">
+                                    <div class="card border-danger px-3  bg-danger mb-3">
+                                        <div class="card-body text-center d-flex flex-column">
+                                            <b class="text-dark">L</b>
+                                            <span class="badge  text-dark fs-6">3 / 5</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a type="button" class="fs-1 text-dark text-decoration-none" id="v-pills-8-tab"
+                                    data-bs-toggle="pill" data-bs-target="#v-pills-8" type="button" role="tab"
+                                    aria-controls="v-pills-8" aria-selected="false">
+                                    <div class="card border-danger px-3  bg-danger mb-3">
+                                        <div class="card-body text-center d-flex flex-column">
+                                            <i class="bi bi-bootstrap text-dark"></i>
+                                            <span class="badge text-dark fs-6">4 / 5</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a type="button" class="fs-1 text-dark text-decoration-none" id="v-pills-9-tab"
+                                    data-bs-toggle="pill" data-bs-target="#v-pills-9" type="button" role="tab"
+                                    aria-controls="v-pills-9" aria-selected="false">
+                                    <div class="card border-danger px-3  bg-danger mb-3">
+                                        <div class="card-body text-center d-flex flex-column">
+                                            <b class="text-dark">JQ</b>
+                                            <span class="badge  text-dark fs-6">2 / 5</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col">
+                <div class="card border-light mt-3">
+                    <div class="card-header text-center"><a
+                            class="text-decoration-none text-danger fs-3">ПРОГРАММИРОВАНИЕ</a></div>
+                    <div class="card-body text-center" role="presentation">
+                        <div class="row">
+
+                            <div class="col">
+                                <a type="button" class="fs-1 text-dark text-decoration-none" id="v-pills-10-tab"
+                                    data-bs-toggle="pill" data-bs-target="#v-pills-10" role="tab"
+                                    aria-controls="v-pills-10" aria-selected="false">
+                                    <div class="card border-danger px-3  bg-danger mb-3">
+                                        <div class="card-body text-center d-flex flex-column">
+                                            <i class="bi bi-braces-asterisk text-dark"></i>
+                                            <span class="badge text-dark fs-6">2 / 5</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <div class="col text-end">
+                                <a type="button" class="fs-1 text-dark text-decoration-none" id="v-pills-11-tab"
+                                    data-bs-toggle="pill" data-bs-target="#v-pills-11" role="tab"
+                                    aria-controls="v-pills-11" aria-selected="false">
+                                    <div class="card border-danger px-3  bg-danger mb-3">
+                                        <div class="card-body text-center d-flex flex-column">
+                                            <i class="bi bi-windows text-dark"></i>
+                                            <span class="badge text-dark fs-6">3 / 5</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col text-start">
+                                <a type="button" class="fs-1 text-dark text-decoration-none" id="v-pills-12-tab"
+                                    data-bs-toggle="pill" data-bs-target="#v-pills-12" role="tab"
+                                    aria-controls="v-pills-12" aria-selected="false">
+                                    <div class="card border-danger px-3  bg-danger mb-3">
+                                        <div class="card-body text-center d-flex flex-column">
+                                            <i class="bi bi-ubuntu text-dark"></i>
+                                            <span class="badge text-dark fs-6">3 / 5</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <a type="button" class="fs-1 text-dark text-decoration-none" id="v-pills-13-tab"
+                                    data-bs-toggle="pill" data-bs-target="#v-pills-13" type="button" role="tab"
+                                    aria-controls="v-pills-13" aria-selected="false">
+                                    <div class="card border-danger px-3  bg-danger mb-3">
+                                        <div class="card-body text-center d-flex flex-column">
+                                            <b class="text-dark">Py</b>
+                                            <span class="badge  text-dark fs-6">3 / 5</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a type="button" class="fs-1 text-dark text-decoration-none" id="v-pills-14-tab"
+                                    data-bs-toggle="pill" data-bs-target="#v-pills-14" type="button" role="tab"
+                                    aria-controls="v-pills-14" aria-selected="false">
+                                    <div class="card border-danger px-3  bg-danger mb-3">
+                                        <div class="card-body text-center d-flex flex-column">
+                                            <b class="text-dark ">C++</b>
+                                            <span class="badge  text-dark fs-6">2 / 5</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a type="button" class="fs-1 text-dark text-decoration-none" id="v-pills-15-tab"
+                                    data-bs-toggle="pill" data-bs-target="#v-pills-15" type="button" role="tab"
+                                    aria-controls="v-pills-15" aria-selected="false">
+                                    <div class="card border-danger px-3 bg-danger mb-3">
+                                        <div class="card-body text-center d-flex flex-column">
+                                            <b class="text-dark ">C#</b>
+                                            <span class="badge  text-dark fs-6">3 / 5</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <a type="button" class="fs-1 text-dark text-decoration-none" id="v-pills-16-tab"
+                                    data-bs-toggle="pill" data-bs-target="#v-pills-16" role="tab"
+                                    aria-controls="v-pills-16" aria-selected="false">
+                                    <div class="card border-danger px-1  bg-danger mb-3">
+                                        <div class="card-body text-center d-flex flex-column">
+                                            <b class="text-dark ">ООП</b>
+                                            <span class="badge text-dark fs-6">2 / 5</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <a type="button" class="fs-1 text-dark text-decoration-none" id="v-pills-17-tab"
+                                    data-bs-toggle="pill" data-bs-target="#v-pills-17" role="tab"
+                                    aria-controls="v-pills-17" aria-selected="false">
+                                    <div class="card border-danger px-3  bg-danger mb-3">
+                                        <div class="card-body text-center d-flex flex-column">
+                                            <i class="bi bi-github text-dark"></i>
+                                            <span class="badge text-dark fs-6">2 / 5</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card border-success mt-3">
+                    <div class="card-header text-center"><a class="text-decoration-none text-danger fs-3">КОРПОРАТ</a>
+                    </div>
+                    <div class="card-body text-center" role="presentation">
+                        <div class="row">
+                            <div class="col">
+                                <a type="button" class="fs-1 text-dark text-decoration-none" id="v-pills-18-tab"
+                                    data-bs-toggle="pill" data-bs-target="#v-pills-18" role="tab"
+                                    aria-controls="v-pills-18" aria-selected="false">
+                                    <div class="card border-danger px-3  bg-danger mb-3">
+                                        <div class="card-body text-center d-flex flex-column">
+                                            <i class="bi bi-buildings text-dark"></i>
+                                            <span class="badge text-dark fs-6">4 / 5</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <div class="col text-end">
+                                <a type="button" class="fs-1 text-dark text-decoration-none" id="v-pills-19-tab"
+                                    data-bs-toggle="pill" data-bs-target="#v-pills-19" role="tab"
+                                    aria-controls="v-pills-19" aria-selected="false">
+                                    <div class="card border-danger px-3  bg-danger mb-3">
+                                        <div class="card-body text-center d-flex flex-column">
+                                            <i class="bi bi-filetype-pptx text-dark"></i>
+                                            <span class="badge text-dark fs-6">4 / 5</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col text-start">
+                                <a type="button" class="fs-1 text-dark text-decoration-none" id="v-pills-20-tab"
+                                    data-bs-toggle="pill" data-bs-target="#v-pills-20" role="tab"
+                                    aria-controls="v-pills-20" aria-selected="false">
+                                    <div class="card border-danger px-3  bg-danger mb-3">
+                                        <div class="card-body text-center d-flex flex-column">
+                                            <i class="bi bi-filetype-xlsx text-dark"></i>
+                                            <span class="badge text-dark fs-6">3 / 5</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <a type="button" class="fs-1 text-dark text-decoration-none" id="v-pills-21-tab"
+                                    data-bs-toggle="pill" data-bs-target="#v-pills-21" role="tab"
+                                    aria-controls="v-pills-21" aria-selected="false">
+                                    <div class="card border-danger px-3  bg-danger mb-3">
+                                        <div class="card-body text-center d-flex flex-column">
+                                            <b class="text-dark ">F</b>
+                                            <span class="badge text-dark fs-6">2 / 5</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <a type="button" class="fs-1 text-dark text-decoration-none" id="v-pills-23-tab"
+                                    data-bs-toggle="pill" data-bs-target="#v-pills-23" role="tab"
+                                    aria-controls="v-pills-23" aria-selected="false">
+                                    <div class="card border-danger px-3  bg-danger mb-3">
+                                        <div class="card-body text-center d-flex flex-column">
+                                            <i class="bi bi-person text-dark"></i>
+                                            <span class="badge text-dark fs-6">2 / 5</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a type="button" class="fs-1 text-dark text-decoration-none" id="v-pills-24-tab"
+                                    data-bs-toggle="pill" data-bs-target="#v-pills-24" role="tab"
+                                    aria-controls="v-pills-24" aria-selected="false">
+                                    <div class="card border-danger px-3  bg-danger mb-3">
+                                        <div class="card-body text-center d-flex flex-column">
+                                            <i class="bi bi-cash text-dark"></i>
+                                            <span class="badge text-dark fs-6">4 / 5</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a type="button" class="fs-1 text-dark text-decoration-none" id="v-pills-25-tab"
+                                    data-bs-toggle="pill" data-bs-target="#v-pills-25" role="tab"
+                                    aria-controls="v-pills-25" aria-selected="false">
+                                    <div class="card border-danger px-3  bg-danger mb-3">
+                                        <div class="card-body text-center d-flex flex-column">
+                                            <i class="bi bi-people text-dark"></i>
+                                            <span class="badge text-dark fs-6">2 / 5</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Невидимая кнопка для скрытой секции с лоадером -->
+        <button class="nav-link active visually-hidden" id="v-pills-home-tab" data-bs-toggle="pill"
+            data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+            aria-selected="true">Home</button>
+
+
+
+        <div class="row sticky-bottom">
+            <!-- Описание умения -->
+            <div class="col-md-3">
+
+
+                <div class="card border-danger bg-dark mt-5 ">
+                    <div class="card-body">
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                                aria-labelledby="v-pills-home-tab" tabindex="0">
+                                <div class="spinner-border" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-1-tab"
+                                tabindex="0">
+
+                                <!--Карточка навыка-->
+                                <div class="col-md-6 w-100  text-center" style="min-height: 200px;">
+                                    <a class="fs-3 text-danger text-decoration-none">Веб-стек <span
+                                            class="badge text-bg-danger text-dark">2</span></a>
+                                    <p class="text-danger text-center">Общие умения для cоздания web-приложений </p>
+                                    <table class="">
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-success align-center"><i class="bi bi-check-circle"></i>
+                                                </td>
+                                                <td class="text-success text-center">Владение языками гипертекстовой
+                                                    разметки и таблицей стилей</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-success align-center"><i class="bi bi-check-circle">
+                                                </td>
+                                                <td class="text-success text-center">Освоение технологий хостинга
+                                                    для web-приложений</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-2-tab"
+                                tabindex="0">
+                                <div class="row">
+                                    <div class="col-md-6 w-100 text-center" style="min-height: 200px;">
+                                        <a class="fs-3 text-danger text-decoration-none">HTML <span
+                                                class="badge text-bg-danger text-dark">4</span></a>
+                                        <p class="text-danger text-center">Уровень владения языком гипертекстовой
+                                            разметки</p>
+                                        <table class="">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Умение создавать простые
+                                                        веб-страницы</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Умение изменять внешний вид
+                                                        гипертекстовой разметки с помощью таблиц стилей</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-success align-center"><i class="bi bi-check-circle">
+                                                    </td>
+                                                    <td class="text-success text-center">Умение создавать адаптивные и
+                                                        отзывчивые веб-страницы</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-success align-center"><i class="bi bi-check-circle">
+                                                    </td>
+                                                    <td class="text-success text-center">Знание более продвинутых тегов
+                                                        и атрибутов HTML</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-3-tab"
+                                tabindex="0">
+                                <div class="row">
+                                    <div class="col-md-6 w-100 text-center" style="min-height: 200px;">
+                                        <a class="fs-3 text-danger text-decoration-none">CSS <span
+                                                class="badge text-bg-danger text-dark">3</span></a>
+                                        <p class="text-danger text-center">Уровень владения языком каскадных таблиц
+                                            стилей</p>
+                                        <table class="">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Основные понятия и механика
+                                                        применения</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Создание простых анимаций и
+                                                        переходов</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-success align-center"><i class="bi bi-check-circle">
+                                                    </td>
+                                                    <td class="text-success text-center">Создание сложных анимаций с
+                                                        помощью ключевых кадров</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-4" role="tabpanel" aria-labelledby="v-pills-4-tab"
+                                tabindex="0">
+                                <div class="row">
+                                    <div class="col-md-6 w-100 text-center" style="min-height: 200px;">
+                                        <a class="fs-3 text-danger text-decoration-none">JS <span
+                                                class="badge text-bg-danger text-dark">2</span></a>
+                                        <p class="text-danger text-center">Уровень владения языком программирования для
+                                            создания интерактивных веб-страниц</p>
+                                        <table class="">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Основы синтаксиса, создание
+                                                        простых функций</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Базовые знания (Массивы,
+                                                        объекты и циклы)</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-5" role="tabpanel" aria-labelledby="v-pills-5-tab"
+                                tabindex="0">
+                                <div class="row">
+                                    <div class="col-md-6 w-100 text-center" style="min-height: 200px;">
+                                        <a class="fs-3 text-danger text-decoration-none">PHP <span
+                                                class="badge text-bg-danger text-dark">4</span></a>
+                                        <p class="text-danger text-center">Уровень владения C-подобным скриптовым языком
+                                            программирования</p>
+                                        <table class="">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Основы синтаксиса, написание
+                                                        простых скриптов</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Понимание более сложных
+                                                        концепции, такие как циклы, условные операторы, массивы и
+                                                        функции</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Работа с базами данных,
+                                                        создания классов и объектов, а также использования сторонних
+                                                        библиотек и фреймворков</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Создание сложных веб-приложений
+                                                        и систем. Оптимизация кода, безопасность и эффективная обработка
+                                                        запросов.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-6" role="tabpanel" aria-labelledby="v-pills-6-tab"
+                                tabindex="0">
+                                <div class="row">
+                                    <div class="col-md-6 w-100 text-center" style="min-height: 200px;">
+                                        <a class="fs-3 text-danger text-decoration-none">SQL <span
+                                                class="badge text-bg-danger text-dark">3</span></a>
+                                        <p class="text-danger text-center">Уровень владения дикларативным языком
+                                            управления базами данных</p>
+                                        <table class="w-100">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Основы синтаксиса SQL</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Подзапросы и оконные функции
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Оптимизация запросов и индексов
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-7" role="tabpanel" aria-labelledby="v-pills-7-tab"
+                                tabindex="0">
+                                <div class="row">
+                                    <div class="col-md-6 w-100 text-center" style="min-height: 200px;">
+                                        <a class="fs-3 text-danger text-decoration-none">Laravel<span
+                                                class="badge text-bg-danger text-dark">3</span></a>
+                                        <p class="text-danger text-center">Уровень владения веб-фреймворком для
+                                            разработки с использованием архитектурной моделью MVC </p>
+                                        <table class="">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Основное знание синтаксиса
+                                                        Laravel, базовое понимание маршрутизации и контроллеров</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Работа с базами данных,
+                                                        создание авторизации и аутентификации пользователей,
+                                                        использование шаблонов Blade</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Разработка сложных
+                                                        веб-приложений, использование кэширования и оптимизации
+                                                        производительности</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-8" role="tabpanel" aria-labelledby="v-pills-8-tab"
+                                tabindex="0">
+                                <div class="row">
+                                    <div class="col-md-6 w-100 text-center" style="min-height: 200px;">
+                                        <a class="fs-3 text-danger text-decoration-none">Bootstrap <span
+                                                class="badge text-bg-danger text-dark">4</span></a>
+                                        <p class="text-danger text-center">Уровень владения набором инструментов для
+                                            создания сайтов и веб-приложений</p>
+                                        <table class="">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Основные понятия Bootstrap</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Более сложное оформление на
+                                                        разных устройствах</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Создание страниц которые
+                                                        автоматически адаптируются к различным устройствам и экранам
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Создание пользовательские тем и
+                                                        взаимодействующих компонентов</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-9" role="tabpanel" aria-labelledby="v-pills-9-tab"
+                                tabindex="0">
+                                <div class="row">
+                                    <div class="col-md-6 w-100 text-center" style="min-height: 200px;">
+                                        <a class="fs-3 text-danger text-decoration-none">JQuery <span
+                                                class="badge text-bg-danger text-dark">2</span></a>
+                                        <p class="text-danger text-center">Уровень владения набором функций JavaScript
+                                        </p>
+                                        <table class="">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Основные понятия - синтаксис,
+                                                        селекторы и базовые методы</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Создание анимации, работа с
+                                                        AJAX-запросами, создание слайдеров и прокрутки</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-10" role="tabpanel" aria-labelledby="v-pills-10-tab"
+                                tabindex="0">
+                                <div class="row">
+                                    <div class="col-md-6 w-100 text-center" style="min-height: 200px;">
+                                        <a class="fs-3 text-danger text-decoration-none">Программирование <span
+                                                class="badge text-bg-danger text-dark">2</span></a>
+                                        <p class="text-danger text-center">Уровень владения основными правилами
+                                            программирования
+                                        </p>
+                                        <table class="">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Понятие основных функций и
+                                                        концепций языков программирования</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Понятие логики и более сложных
+                                                        комбинаций функций</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-11" role="tabpanel" aria-labelledby="v-pills-11-tab"
+                                tabindex="0">
+                                <div class="row">
+                                    <div class="col-md-6 w-100 text-center" style="min-height: 200px;">
+                                        <a class="fs-3 text-danger text-decoration-none">Windows <span
+                                                class="badge text-bg-danger text-dark">3</span></a>
+                                        <p class="text-danger text-center">Уровень владения операционной системой
+                                        </p>
+                                        <table class="">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Проведение основных операций в
+                                                        интерфейсе</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Использование различных
+                                                        приложений и инструментов, более тонкая настройка</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Создание сетевого сервера </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-12" role="tabpanel" aria-labelledby="v-pills-12-tab"
+                                tabindex="0">
+                                <div class="row">
+                                    <div class="col-md-6 w-100 text-center" style="min-height: 200px;">
+                                        <a class="fs-3 text-danger text-decoration-none">Ubuntu <span
+                                                class="badge text-bg-danger text-dark">3</span></a>
+                                        <p class="text-danger text-center">Уровень владения операционной системой
+                                        </p>
+                                        <table class="">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Проведение основных операций в
+                                                        интерфейсе</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Использование различных
+                                                        приложений и инструментов, более тонкая настройка</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Создание сетевого сервера </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-13" role="tabpanel" aria-labelledby="v-pills-13-tab"
+                                tabindex="0">
+                                <div class="row">
+                                    <div class="col-md-6 w-100 text-center" style="min-height: 200px;">
+                                        <a class="fs-3 text-danger text-decoration-none">Python <span
+                                                class="badge text-bg-danger text-dark">3</span></a>
+                                        <p class="text-danger text-center">Уровень владения языком программирования
+                                        </p>
+                                        <table class="">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Понятие основных концепций
+                                                        языка</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Базовый опыт и возможность
+                                                        использования функций и модулей </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Более сложные программы и
+                                                        уверенная работа с внешними библиотеками. </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-14" role="tabpanel" aria-labelledby="v-pills-14-tab"
+                                tabindex="0">
+                                <div class="row">
+                                    <div class="col-md-6 w-100 text-center" style="min-height: 200px;">
+                                        <a class="fs-3 text-danger text-decoration-none">С++ <span
+                                                class="badge text-bg-danger text-dark">2</span></a>
+                                        <p class="text-danger text-center">Уровень владения языком программирования
+                                        </p>
+                                        <table class="">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Основы C++ и умение писать
+                                                        простые программы</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Базовое понимание языка C++ и
+                                                        умение работать с основными структурами данных и алгоритмами
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-15" role="tabpanel" aria-labelledby="v-pills-15-tab"
+                                tabindex="0">
+                                <div class="row">
+                                    <div class="col-md-6 w-100 text-center" style="min-height: 200px;">
+                                        <a class="fs-3 text-danger text-decoration-none">С# <span
+                                                class="badge text-bg-danger text-dark">3</span></a>
+                                        <p class="text-danger text-center">Уровень владения языком программирования
+                                        </p>
+                                        <table class="">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Основы C# и умение писать
+                                                        простые программы</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Базовое понимание языка C# и
+                                                        умение работать с основными структурами данных и алгоритмами
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Разработка Windows Forms и
+                                                        интерфейс приложений
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-16" role="tabpanel" aria-labelledby="v-pills-16-tab"
+                                tabindex="0">
+                                <div class="row">
+                                    <div class="col-md-6 w-100 text-center" style="min-height: 200px;">
+                                        <a class="fs-3 text-danger text-decoration-none">ООП <span
+                                                class="badge text-bg-danger text-dark">2</span></a>
+                                        <p class="text-danger text-center">Уровень владения методологией
+                                            программирования
+                                        </p>
+                                        <table class="">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Основные принципы ООП,
+                                                        инкапсуляция, наследование и полиморфизм</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Концепции абстракции,
+                                                        наследования между классами и интерфейсами, полиморфизм
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-17" role="tabpanel" aria-labelledby="v-pills-17-tab"
+                                tabindex="0">
+                                <div class="row">
+                                    <div class="col-md-6 w-100 text-center" style="min-height: 200px;">
+                                        <a class="fs-3 text-danger text-decoration-none">GitHub <span
+                                                class="badge text-bg-danger text-dark">2</span></a>
+                                        <p class="text-danger text-center">Уровень владения веб-сервисом разработчиков
+                                        </p>
+                                        <table class="">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-danger align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-danger text-center">Ошибка</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-danger align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-danger text-center">Ошибка
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-18" role="tabpanel" aria-labelledby="v-pills-18-tab"
+                                tabindex="0">
+                                <div class="row">
+                                    <div class="col-md-6 w-100 text-center" style="min-height: 200px;">
+                                        <a class="fs-3 text-danger text-decoration-none">Корпоративная этика <span
+                                                class="badge text-bg-danger text-dark">4</span></a>
+                                        <p class="text-danger text-center">Уровень корпоративной этики
+                                        </p>
+                                        <table class="">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Соблюдение основных правил
+                                                        поведения и определение своей роли в команде</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Усваивание значения создания
+                                                        прибыли для компании и ее увеличения
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Справедливость и честность в
+                                                        рабочих отношениях
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Умение слушать коллег,
+                                                        обмениваться идеями и конструктивно решать конфликты
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-19" role="tabpanel" aria-labelledby="v-pills-19-tab"
+                                tabindex="0">
+                                <div class="row">
+                                    <div class="col-md-6 w-100 text-center" style="min-height: 200px;">
+                                        <a class="fs-3 text-danger text-decoration-none">Power Point <span
+                                                class="badge text-bg-danger text-dark">4</span></a>
+                                        <p class="text-danger text-center">Использоваение средства создания презентаций
+                                        </p>
+                                        <table class="">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Создание простых презентаций с
+                                                        базовыми элементами</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Более сложные и информативные
+                                                        презентации
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Настройка профессионального
+                                                        вида презентаций.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Умение слушать коллег,
+                                                        обмениваться идеями и конструктивно решать конфликты
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-20" role="tabpanel" aria-labelledby="v-pills-20-tab"
+                                tabindex="0">
+                                <div class="row">
+                                    <div class="col-md-6 w-100 text-center" style="min-height: 200px;">
+                                        <a class="fs-3 text-danger text-decoration-none">Excel <span
+                                                class="badge text-bg-danger text-dark">3</span></a>
+                                        <p class="text-danger text-center">Использование табличных вычислительных
+                                            механизмов
+                                        </p>
+                                        <table class="">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Владение базовыми функциями и
+                                                        формулами</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Улучшенное владение функциями и
+                                                        формулами Excel
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Использование инструментов
+                                                        анализа данных, таких как сценарии и регрессионный анализ
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-21" role="tabpanel" aria-labelledby="v-pills-21-tab"
+                                tabindex="0">
+                                <div class="row">
+                                    <div class="col-md-6 w-100 text-center" style="min-height: 200px;">
+                                        <a class="fs-3 text-danger text-decoration-none">Figma <span
+                                                class="badge text-bg-danger text-dark">2</span></a>
+                                        <p class="text-danger text-center">Онлайн-сервис для разработки интерфейсов
+                                        </p>
+                                        <table class="">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Основы интерфейса и
+                                                        инструментов</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Работа с макетами, элементы,
+                                                        стили и работа с текстом
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-23" role="tabpanel" aria-labelledby="v-pills-23-tab"
+                                tabindex="0">
+                                <div class="row">
+                                    <div class="col-md-6 w-100 text-center" style="min-height: 200px;">
+                                        <a class="fs-3 text-danger text-decoration-none">SOLO-WORK <span
+                                                class="badge text-bg-danger text-dark">2</span></a>
+                                        <p class="text-danger text-center">Умение работать над проектом в одиночку
+                                        </p>
+                                        <table class="">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Эффективный сбор подробного
+                                                        техническое задания</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Открытая разработка (Live view)
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-24" role="tabpanel" aria-labelledby="v-pills-24-tab"
+                                tabindex="0">
+                                <div class="row">
+                                    <div class="col-md-6 w-100 text-center" style="min-height: 200px;">
+                                        <a class="fs-3 text-danger text-decoration-none">МОТИВАЦИЯ <span
+                                                class="badge text-bg-danger text-dark">4</span></a>
+                                        <p class="text-danger text-center">Способность к мотивации
+                                        </p>
+                                        <table class="w-100 text-center">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Финансовая мотивация</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Проектная мотивация
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Командная мотивация
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Опытная мотивация
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-25" role="tabpanel" aria-labelledby="v-pills-25-tab"
+                                tabindex="0">
+                                <div class="row">
+                                    <div class="col-md-6 w-100 text-center" style="min-height: 200px;">
+                                        <a class="fs-3 text-danger text-decoration-none">TEAM-WORK <span
+                                                class="badge text-bg-danger text-dark">2</span></a>
+                                        <p class="text-danger text-center">Умение работать над проектом в команде
+                                        </p>
+                                        <table class="">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">
+                                                        Изучение правил командной работы, активное участи в совещаниях
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-success align-center"><i
+                                                            class="bi bi-check-circle"></i></td>
+                                                    <td class="text-success text-center">Самостоятельность в работе в
+                                                        команде
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- End Content-->
+    </div>
+
+    <script>
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl);
+        });
+    </script>
+
+
+    <script>
+        var audio = document.getElementById("myAudio");
+        var button = document.getElementById("playmusic");
+        function toggleAudio() {
+            if (audio.paused) {
+                audio.play();
+                button.innerHTML = '<i class="text-danger bi bi-pause fs-1"></i>';
+            } else {
+                audio.pause();
+                button.innerHTML = '<i class="text-danger bi bi-play fs-1"></i>';
+            }
+        }
+    </script>
+    <script src="layout/js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

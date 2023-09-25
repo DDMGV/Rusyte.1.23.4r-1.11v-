@@ -1,0 +1,64 @@
+/* Скролинг таблицы */
+.morecharacter::-webkit-scrollbar {width: 0;}
+.morecharacter {
+    height: 300px; 
+    overflow: auto;
+}
+
+/* Общие стили для скролл-бара */
+/* Цветовая палитра */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Фоновый цвет трека */
+  ::-webkit-scrollbar-track {
+    background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(84, 28, 31, 1) 100%);
+  }
+  
+  /* Цвет ползунка */
+  ::-webkit-scrollbar-thumb {
+    background: #e44c55;
+    border-radius: 4px;
+  }
+  
+  /* При наведении на ползунок */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #e65a64;
+  }
+  
+  /* При активации ползунка (нажатии) */
+  ::-webkit-scrollbar-thumb:active {
+    background: #020024;
+  }
+  
+.cyber-bg {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(84, 28, 31, 1) 100%);
+}
+
+.cyber-text {
+  color: #e44c55;
+  position: relative;
+  text-decoration: none;
+}
+
+.cyber-text::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff; /* Цвет подчеркивания */
+  transform: scaleX(0); /* Изначально подчеркивание скрыто */
+  transition: transform 0.3s; /* Плавное изменение свойства transform */
+}
+
+.cyber-text:hover::after {
+  transform: scaleX(1); /* При наведении курсора подчеркивание появляется */
+}
+
+.table-transparent {
+  background-color: transparent;
+}

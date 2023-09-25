@@ -1,0 +1,653 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CYBERRESUME2077</title>
+    <link href="layout/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="layout/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+
+    </style>
+</head>
+
+<body class="cyber-bg" onload="liveTimeReport()">
+
+    <nav class="navbar navbar-expand-lg bg-dark  p-4" data-bs-theme="dark">
+        <div class="container-fluid">
+            <div class="row d-flex">
+                <div class="col-6">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td rowspan="2">
+                                    <a class="text-light text-decoration-none fs-2 m-0 shadow-lg" href="#">46</a>
+                                </td>
+                                <td>
+                                    <a class="text-light text-decoration-none fs-4 ">УРОВЕНЬ</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped bg-light progress-bar-animated"
+                                            role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
+                                            style="width: 35%;"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-6">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td rowspan="2">
+                                    <a class="text-success text-decoration-none fs-2 m-0 shadow-lg" href="#">21</a>
+                                </td>
+                                <td>
+                                    <a class="text-success text-decoration-none fs-4">РЕПУТАЦИЯ</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped bg-success progress-bar-animated"
+                                            role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
+                                            style="width: 75%;"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid d-flex justify-content-center">
+            <audio id="myAudio" autoplay loop preload="auto" src="/layout/audio/cybersound.mp3"></audio>
+            <button id="playmusic" class="bg-transparent border" onclick="toggleAudio()"><i
+                    class="text-danger bi bi-pause fs-1"></i></button>
+            <a class="text-danger fs-3 text-decoration-none">Hyper – Spoiler</a>
+        </div>
+
+
+        <div class="container-fluid">
+            <button class="navbar-toggler col-12" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarcolor02" aria-controls="navbarcolor02" aria-expanded="false"
+                aria-label="toggle navigation">
+                <i class="text-danger fs-1 bi bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarcolor02">
+                <ul class="navbar-nav me-auto fs-5">
+                    <li class="nav-item text-center">
+                        <a class="nav-link text-danger" href="#"><i class="bi bi-person-bounding-box"></i> ПЕРСОНАЖ<span
+                                class="visually-hidden">(current)</a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link text-danger" href="#"><i class="bi bi-diagram-3"></i> НАВЫКИ</a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link text-danger" href="#"><i class="bi bi-box2"></i> ИНВЕНТАРЬ</a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link text-danger" href="#"><i class="bi bi-award"></i> ДОСТИЖЕНИЯ</a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link text-danger" href="#"><i class="bi bi-send"></i> КОНТАКТ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Левая часть -->
+            <div class="col-lg-4">
+                <div class="col-12 mt-5">
+                    <div class="card text-center border border-danger border-2 bg-dark" style="--bs-bg-opacity: .95;">
+                        <div class="card-body">
+                            <a class="fs-1 text-decoration-none text-danger animation">ГОРЕВ ДМИТРИЙ ВЛАДИМИРОВИЧ</a>
+                            <table class="table table-hover mt-3">
+                                <thead>
+                                    <tr class="table-danger">
+                                        <th scope="row" class="text-start text-dark">Характеристики</th>
+                                        <th scope="row">
+                                            </td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-start text-danger">ЛОКАЦИЯ</td>
+                                        <td class="text-start text-danger">г. Вологда</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-start text-danger">КОМПАНИЯ</td>
+                                        <td class="text-start text-danger">БУ СО ВО "ЦИОКО"</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-start text-danger">СТАТУС</td>
+                                        <td class="text-start text-danger">Главный инженер-программист</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-start text-danger">СТАЖ</td>
+                                        <td class="text-start text-danger">
+                                            <p id="live-report"></p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="morecharacter">
+                                <table class="table table-hover table-responsive mt-3">
+                                    <thead>
+                                        <tr class="table-danger">
+                                            <th scope="row" class="text-start text-dark">Больше характеристик</th>
+                                            <th scope="row" class="text-center text-dark align-middle"><i
+                                                    class="bi bi-arrow-down-up"></i></td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-start text-danger align-middle"><i
+                                                    class="bi bi-mortarboard"></i> СПО</td>
+                                            <td class="text-start text-danger text-center">
+                                                <a href="https://vkk.edu.ru/speciality" class="text-decoration-none"
+                                                    target="_blank">Специалист по информационным системам</a>
+                                                <span class="badge bg-danger">2014 г.<i
+                                                        class="bi bi-arrow-right-short"></i>2018 г.</span>
+                                                <span class="badge bg-danger">#09.02.07</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-start text-danger align-middle"><i
+                                                    class="bi bi-mortarboard"></i> ВПО</td>
+                                            <td class="text-start text-danger text-center">
+                                                <a href="http://priem.vogu35.ru/090301informatikaivichislitelnayatehnika"
+                                                    class="text-decoration-none" target="_blank">Информатика и
+                                                    вычислительная техника</a>
+                                                <br>
+                                                <span class="badge bg-danger">2022 г. <i
+                                                        class="bi bi-arrow-right-short"></i> 2026 г.</span>
+                                                <span class="badge bg-danger">#09.03.01</span>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-start text-danger  align-middle"><i class="bi bi-star"></i>
+                                                ВС РФ</td>
+                                            <td class="text-start text-danger text-center"><i
+                                                    class="bi bi-chevron-compact-up"></i> ЕФРЕЙТОР <br>
+                                                <span class="badge bg-danger">2019 г. <i
+                                                        class="bi bi-arrow-right-short"></i> 2020 г.</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-start text-danger align-middle"><i
+                                                    class="bi bi-bookmark-plus"></i> ДОП.ОПЫТ</td>
+                                            <td class="text-start text-danger text-center"><a
+                                                    class="text-decoration-none"
+                                                    href="https://code-class.ru/vologda046">ПРЕПОДАВАТЕЛЬ СТАРШИХ
+                                                    КУРСОВ</a> <br>
+                                                <span class="badge bg-danger">2021 г. <i
+                                                        class="bi bi-arrow-right-short"></i> 2023 г.</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-start text-danger align-middle">СТРЕССОУСТОЙЧИВОСТЬ</td>
+                                            <td class="text-start text-danger align-middle">
+                                                <div class="progress">
+                                                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated"
+                                                        role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                                        aria-valuemax="100" style="width: 75%;">75%</div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-start text-danger align-middle">ВНИМАТЕЛЬНОСТЬ</td>
+                                            <td class="text-start text-danger align-middle">
+                                                <div class="progress">
+                                                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated"
+                                                        role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                                        aria-valuemax="100" style="width: 85%;">85%</div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-start text-danger align-middle">ОБУЧАЕМОСТЬ</td>
+                                            <td class="text-start text-danger align-middle">
+                                                <div class="progress">
+                                                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated"
+                                                        role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                                        aria-valuemax="100" style="width: 93%;">93%</div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-start text-danger align-middle">КОММУНИКАЦИЯ</td>
+                                            <td class="text-start text-danger align-middle">
+                                                <div class="progress">
+                                                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated"
+                                                        role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                                        aria-valuemax="100" style="width: 99%;">99%</div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-start text-danger align-middle">МОТИВАЦИЯ</td>
+                                            <td class="text-start text-danger align-middle">
+                                                <div class="progress">
+                                                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated"
+                                                        role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                                        aria-valuemax="100" style="width: 100%;">100%</div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-start text-danger align-middle">СТИЛЬ</td>
+                                            <td class="text-start text-danger align-middle">
+                                                <div class="progress">
+                                                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated"
+                                                        role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                                        aria-valuemax="100" style="width: 100%;">100%</div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-start text-danger align-middle">ЧЕСТНОСТЬ</td>
+                                            <td class="text-start text-danger align-middle">
+                                                <div class="progress">
+                                                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated"
+                                                        role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                                        aria-valuemax="100" style="width: 95%;">95%</div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                                              
+                                        <tr>
+                                            <td class="text-start text-danger"><i class="bi bi-calendar3"></i> Дата
+                                                рождения</td>
+                                            <td class="text-start text-danger">19.04.1998</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-start text-danger"><i class="bi bi-moon-stars"></i> Знак
+                                                зодиака</td>
+                                            <td class="text-start text-danger">ОВЕН</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-start text-danger">РОСТ</td>
+                                            <td class="text-start text-danger">182 см</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-start text-danger">АЛЛЕРГИЯ</td>
+                                            <td class="text-start text-danger"><em>Отсутствует</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-start text-danger">АЛКОГОЛЬ</td>
+                                            <td class="text-start text-success">Можно</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-start text-danger">ТЕМПЕРАТУРА</td>
+                                            <td class="text-start text-danger">36,6 °C</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Центральная часть -->
+            <div class="col-lg-4">
+                <img src="layout/images/Total.gif" class="img-fluid" alt="...">
+            </div>
+
+            <!-- Левая часть -->
+            <div class="col-lg-4 mt-5">
+                <div class="row ">
+                    <!-- Карточка с киберклешнями-->
+                    <a class="fs-3 text-danger text-decoration-none">РУКИ</a>
+                    <div class="col-12">
+                        <div class="card text-center border border-warning border-2 bg-dark"
+                            style="--bs-bg-opacity: .95;">
+                            <div class="card-body text-warning d-flex">
+                                <div class="col-2">
+                                    <a class="text-warning fs-1" data-bs-toggle="collapse" href="#levelhands"
+                                        role="button" aria-expanded="false" aria-controls="levelhands"><i
+                                            class="bi bi-7-square"></i></a>
+                                </div>
+                                <div class="col text-center">
+                                    <p class="card-title text-start text-warning fs-3 ">Киберклешни</p>
+                                    <p class="card-text text-start text-danger">Опытные прямые руки. Каждый день
+                                        выручают. Вносят правки, быстро печатают и много в себя вмещают.</p>
+
+                                    <div class="d-flex justify-content-between ">
+                                        <table class="bg-transparent w-100">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-start">
+                                                        <a class="text-warning fs-5 text-decoration-none"
+                                                            data-bs-toggle="collapse" href="#handsitems" role="button"
+                                                            aria-expanded="false" aria-controls="handsitems">
+                                                            <i class="bi bi-record-fill"></i>
+                                                            <i class="bi bi-record"></i>
+                                                        </a>
+                                                    </td>
+                                                    <td class="text-end">
+                                                        <!-- <a class="text-end fs-6 text-danger text-decoration-none">РУКИ</a> -->
+                                                    </td>
+                                                    <td class="text-end">
+                                                        <a class="text-warning fs-3" data-bs-toggle="collapse"
+                                                            href="#stathands" role="button" aria-expanded="false"
+                                                            aria-controls="stathands">
+                                                            <i class="bi bi-card-list"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+
+
+                                    </div>
+                                    <div class="collapse" id="stathands">
+                                        <div class="text-center ">
+                                            <table class="bg-transparent w-100">
+                                                <tbody>
+                                                    <tr>
+                                                        <th>Скорость печати <i class="bi bi-speedometer2"></i></th>
+                                                        <th></th>
+                                                        <th>Точность печати <i class="bi bi-check-all"></i></th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>347 зн. / мин</td>
+                                                        <td>🇷🇺</td>
+                                                        <td>97%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>148 зн. / мин</td>
+                                                        <td>🇺🇸</td>
+                                                        <td>88%</td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="collapse mt-3" id="handsitems">
+                                        <div class="text-start">
+                                            <table class="bg-transparent " style="border: 0;">
+                                                <tbody>
+                                                    <tr>
+                                                        <th><i class="bi bi-smartwatch"></i> Apple Watch SE</th>
+                                                        <td><em class="text-danger">+50% к шансу дозвониться до
+                                                                меня</em></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th><i class="bi bi-circle"></i> Кольцо</th>
+                                                        <td><em class="text-danger">Отсутствует</em></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="collapse mt-3" id="levelhands">
+                                        <div class="text-start">
+                                            <label for="progress" class="text-danger">1529 / 3000 XP</label>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
+                                                    role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                                    aria-valuemax="100" style="width: 51%;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                        <div class="col-12 mt-3">
+                            <a class="fs-3 text-danger text-decoration-none">КЛАВИАТУРА</a>
+                            <div class="card text-center border border-secondary border-2 bg-dark"
+                                style="--bs-bg-opacity: .95;">
+                                <div class="card-body text-warning d-flex">
+                                    <div class="col-2">
+                                        <a class="text-secondary fs-1" data-bs-toggle="collapse" href="#level" role="button"
+                                            aria-expanded="false" aria-controls="level"><i class="bi bi-9-square"></i></a>
+                                    </div>
+                                    <div class="col text-center">
+                                        <p class="card-title text-start text-secondary fs-3 ">RAZER Ornata V2</p>
+                                        <p class="card-text text-start text-danger">Клавиатура мембранно-механического типа.
+                                            Приятный звук нажатия клавиш. Регулируемый наклон. Приятный внешний вид.</p>
+                                        <div class="d-flex justify-content-between ">
+                                            <table class="bg-transparent w-100">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="text-start">
+                                                            <a class="text-secondary fs-5 text-decoration-none"
+                                                                data-bs-toggle="collapse" href="#keysitems" role="button"
+                                                                aria-expanded="false" aria-controls="keysitems">
+                                                                <i class="bi bi-record-fill"></i>
+                                                                <i class="bi bi-record-fill"></i>
+                                                                <i class="bi bi-record"></i>
+                                                            </a>
+                                                        </td>
+                                                        <td class="text-end">
+                                                            <!-- <a class="text-end fs-6 text-danger text-decoration-none">КЛАВИАТУРА</a> -->
+                                                        </td>
+                                                        <td class="text-end">
+                                                            <a class="text-secondary fs-3" data-bs-toggle="collapse"
+                                                                href="#statkeys" role="button" aria-expanded="false"
+                                                                aria-controls="statkeys">
+                                                                <i class="bi bi-card-list"></i>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="collapse" id="statkeys">
+                                            <div class="text-center text-secondary">
+                                                <table class="bg-transparent w-100">
+                                                    <tbody>
+                                                        <tr>
+                                                            <th><i class="bi bi-arrow-down-up"></i> Длина </th>
+                                                            <th><i class="bi bi-arrow-left-right"></i> Ширина </th>
+                                                            <th><i class="bi bi-volume-up"></i> Громкость</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>154 мм</td>
+                                                            <td>463 мм</td>
+                                                            <td>70-80 дБ</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="collapse mt-3" id="keysitems">
+                                            <div class="text-start">
+                                                <table class="bg-transparent " style="border: 0;">
+                                                    <tbody>
+                                                        <tr>
+                                                            <th class="text-secondary"><i class="bi bi-square"></i> Коврик
+                                                                для клавиатуры и мыши</th>
+                                                            <td><em class="text-danger">+5% К мягкости к расположению
+                                                                    локтей</em></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="text-secondary"><i class="bi bi-keyboard"></i>
+                                                                Кожаная подставка под запястья</th>
+                                                            <td><em class="text-danger">-35% От затекания кистей рук</em>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="text-secondary"><i class="bi bi-brush"></i> Кисточка
+                                                                для удаления пыли</th>
+                                                            <td><em class="text-danger">Отсутствует</em></td>
+                                                        </tr>
+    
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="collapse mt-3" id="level">
+                                            <div class="text-start">
+                                                <label for="progress" class="text-danger">4129 / 9000 XP</label>
+                                                <div class="progress">
+                                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
+                                                        role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                                        aria-valuemax="100" style="width: 40%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Карточка с мышкой-->
+                        <div class="col-12 mt-3">
+                            <a class="fs-3 text-danger text-decoration-none">МЫШЬ</a>
+                            <div class="card text-center border border-warning border-2 bg-dark"
+                                style="--bs-bg-opacity: .95;">
+                                <div class="card-body text-warning d-flex">
+                                    <div class="col-2">
+                                        <a class="text-warning fs-1" data-bs-toggle="collapse" href="#levelmouse"
+                                            role="button" aria-expanded="false" aria-controls="levelmouse"><i
+                                                class="bi bi-8-square"></i></a>
+                                    </div>
+                                    <div class="col text-center">
+                                        <p class="card-title text-start text-warning fs-3 ">A4Tech X-710BK</p>
+                                        <p class="card-text text-start text-danger">Легендарная оптическая светодиодная мыш.
+                                            Мечта каждого школьника в 2010 году. Бессмертная классика жанра. Надежная как
+                                            Жигули деда.</p>
+    
+                                        <div class="d-flex justify-content-between ">
+                                            <table class="bg-transparent w-100">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="text-start">
+                                                            <a class="text-secondary fs-5 text-decoration-none"
+                                                                data-bs-toggle="collapse" href="#mouseitems" role="button"
+                                                                aria-expanded="false" aria-controls="mouseitems">
+                                                                <i class="bi bi-record-fill"></i>
+                                                            </a>
+                                                        </td>
+                                                        <td class="text-end">
+                                                            <!-- <a class="text-end fs-6 text-danger text-decoration-none">МЫШЬ</a> -->
+                                                        </td>
+                                                        <td class="text-end">
+                                                            <a class="text-warning fs-3" data-bs-toggle="collapse"
+                                                                href="#statmouse" role="button" aria-expanded="false"
+                                                                aria-controls="statmouse">
+                                                                <i class="bi bi-card-list"></i>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+    
+                                                </tbody>
+                                            </table>
+    
+    
+                                        </div>
+                                        <div class="collapse" id="statmouse">
+                                            <div class="text-center ">
+                                                <table class="bg-transparent w-100">
+                                                    <tbody>
+                                                        <tr>
+                                                            <th>Скорость <i class="bi bi-speedometer2"></i></th>
+                                                            <th>Вес <i class="bi bi-mouse"></i></th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>1000 Гц</td>
+                                                            <td>135 г</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="collapse mt-3" id="mouseitems">
+                                            <div class="text-start">
+                                                <table class="bg-transparent " style="border: 0;">
+                                                    <tbody>
+                                                        <tr>
+                                                            <th class="text-secondary"><i class="bi bi-square"></i> Коврик
+                                                                для клавиатуры и мыши</th>
+                                                            <td><em class="text-danger">+5% К мягкости к расположению
+                                                                    локтей</em></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="collapse mt-3" id="levelmouse">
+                                            <div class="text-start">
+                                                <label for="progress" class="text-danger">5529 / 7000 XP</label>
+                                                <div class="progress">
+                                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
+                                                        role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                                        aria-valuemax="100" style="width: 70%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    <!-- Карточка с клавиатурой-->
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script>
+        function liveTimeReport() {
+            var startDate = new Date(2022, 4, 11); // Дата, с которой вы хотите начать отчет
+
+            setInterval(function () {
+                var currentDate = new Date();
+                var timeDiff = currentDate - startDate;
+
+                // Рассчитываем количество лет, месяцев, дней, часов, минут и секунд
+                var years = Math.floor(timeDiff / (365 * 24 * 60 * 60 * 1000));
+                var months = Math.floor(timeDiff / (30 * 24 * 60 * 60 * 1000)) % 12;
+                var days = Math.floor(timeDiff / (24 * 60 * 60 * 1000)) % 30;
+                var hours = Math.floor((timeDiff / (60 * 60 * 1000)) % 24);
+                var minutes = Math.floor((timeDiff / (60 * 1000)) % 60);
+                var seconds = Math.floor((timeDiff / 1000) % 60);
+
+                // Форматируем вывод отчета времени
+                var timeReport = years + " год  " + months + " месяца " + days + " дней " + hours + " часов " + minutes + " минут " + seconds + " секунд ";
+
+                // Выводим отчет времени в элемент с id "live-report"
+                document.getElementById("live-report").innerHTML = timeReport;
+            }, 1000); // Обновлять отчет каждую секунду
+        }
+    </script>
+    <script>
+        var audio = document.getElementById("myAudio");
+        var button = document.getElementById("playmusic");
+        function toggleAudio() {
+            if (audio.paused) {
+                audio.play();
+                button.innerHTML = '<i class="text-danger bi bi-pause fs-1"></i>';
+            } else {
+                audio.pause();
+                button.innerHTML = '<i class="text-danger bi bi-play fs-1"></i>';
+            }
+        }
+    </script>
+    <script src="layout/js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
